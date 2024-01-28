@@ -23,37 +23,68 @@ export default function Services() {
           <HeaderInfo>
             <h1 className="font40 extraBold">Our Awesome Services</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+            Our comprehensive suite of services is designed to cater to your unique needs, providing a seamless and transformative experience. From cutting-edge solutions to personalized support, we are committed to exceeding expectations. Discover a new standard of excellence with our services—your pathway to success starts here.
+              {/* <br />
+              labore et dolore magna aliquyam erat, sed diam voluptua. */}
             </p>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="roller"
-                title="Graphic Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                title="Hardware Solutions"
+                subtitle="We offer a comprehensive range of hardware solutions, spanning from laptops and desktops to robust data servers and racks. Our expertise extends to indoor video walls, EQMS/ticketing machines, POS systems, and VPS configurations."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="monitor"
-                title="Web Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+                title="Software Development"
+                subtitle="Unlock the power of innovative software with our services. From creative UI/UX Figma designs to dynamic web portfolios, websites, and cutting-edge mobile applications, we provide end-to-end solutions. Our proficiency also includes backend services and microservices development."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="browser"
-                title="Development"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
+                title="Marketing Excellence"
+                subtitle="Elevate your online presence with our SEO and digital marketing strategies. We specialize in crafting campaigns that enhance visibility and drive meaningful engagement."
+              />
+            </ServiceBoxWrapper>
+            
+            <ServiceBoxWrapper>
+              <ServiceBox icon="printer" title="Network Solutions" subtitle="Ensure seamless connectivity with our network infrastructure and cabling services. Our expertise includes the installation and configuration of CCTV cameras, as well as hardware and software systems." />
+            </ServiceBoxWrapper>
+
+          </ServiceBoxRow>
+          <ServiceBoxRow className="flex">
+            <ServiceBoxWrapper>
+              <ServiceBox
+                icon="roller"
+                title="Transportation Services"
+                subtitle="Experience prime transportation services with a touch of executive luxury. We provide reliable and efficient transport solutions tailored to your needs."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Print" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
+              <ServiceBox
+                icon="monitor"
+                title="Vehical Services"
+                subtitle="Keep your vehicles in top-notch condition with our mechanical and electrical repairing and maintenance services. We handle vehicle registrations and facilitate the sale/purchase of vehicles. Additionally, explore our range of automotive engine lubricants for optimal performance."
+              />
             </ServiceBoxWrapper>
+            <ServiceBoxWrapper>
+              <ServiceBox
+                icon="browser"
+                title="Renovation and Construction"
+                subtitle="Transform your office or bank space with our expert renovation and construction services. We bring innovation and precision to every project."
+              />
+            </ServiceBoxWrapper>
+            
+            <ServiceBoxWrapper>
+              <ServiceBox icon="printer" title="Electrical Solutions" subtitle="From electrical supplies to wiring and overall electrical management, our services are designed to meet your electrical needs efficiently." />
+            </ServiceBoxWrapper>
+
           </ServiceBoxRow>
+          
         </div>
         {/* <div className="lightBg">
           <div className="container">
@@ -106,7 +137,7 @@ const Wrapper = styled.section`
   width: 100%;
 `;
 const ServiceBoxRow = styled.div`
-  @media (max-width: 860px) {
+  @media (max-width: 870px) {
     flex-direction: column;
   }
 `;
