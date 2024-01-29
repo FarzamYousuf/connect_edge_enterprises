@@ -3,12 +3,12 @@ import styled from "styled-components";
 // Components
 import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
-import FullButton from "../Buttons/FullButton";
+// import FullButton from "../Buttons/FullButton";
 // Assets
-import AddImage1 from "../../assets/img/add/1.png";
-import AddImage2 from "../../assets/img/add/2.png";
-import AddImage3 from "../../assets/img/add/3.png";
-import AddImage4 from "../../assets/img/add/4.png";
+// import AddImage1 from "../../assets/img/add/1.png";
+// import AddImage2 from "../../assets/img/add/2.png";
+// import AddImage3 from "../../assets/img/add/3.png";
+// import AddImage4 from "../../assets/img/add/4.png";
 
 export default function Services() {
   return (
@@ -31,56 +31,56 @@ export default function Services() {
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="roller"
+                icon="hardwareSolution"
                 title="Hardware Solutions"
                 subtitle="We offer a comprehensive range of hardware solutions, spanning from laptops and desktops to robust data servers and racks. Our expertise extends to indoor video walls, EQMS/ticketing machines, POS systems, and VPS configurations."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="monitor"
+                icon="softwareSolution"
                 title="Software Development"
                 subtitle="Unlock the power of innovative software with our services. From creative UI/UX Figma designs to dynamic web portfolios, websites, and cutting-edge mobile applications, we provide end-to-end solutions. Our proficiency also includes backend services and microservices development."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="browser"
+                icon="marketingSolution"
                 title="Marketing Excellence"
                 subtitle="Elevate your online presence with our SEO and digital marketing strategies. We specialize in crafting campaigns that enhance visibility and drive meaningful engagement."
               />
             </ServiceBoxWrapper>
             
             <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Network Solutions" subtitle="Ensure seamless connectivity with our network infrastructure and cabling services. Our expertise includes the installation and configuration of CCTV cameras, as well as hardware and software systems." />
+              <ServiceBox icon="networkSolution" title="Network Solutions" subtitle="Ensure seamless connectivity with our network infrastructure and cabling services. Our expertise includes the installation and configuration of CCTV cameras, as well as hardware and software systems." />
             </ServiceBoxWrapper>
 
           </ServiceBoxRow>
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="roller"
+                icon="transportationSolution"
                 title="Transportation Services"
                 subtitle="Experience prime transportation services with a touch of executive luxury. We provide reliable and efficient transport solutions tailored to your needs."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="monitor"
+                icon="vehicleSolution"
                 title="Vehical Services"
                 subtitle="Keep your vehicles in top-notch condition with our mechanical and electrical repairing and maintenance services. We handle vehicle registrations and facilitate the sale/purchase of vehicles. Additionally, explore our range of automotive engine lubricants for optimal performance."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="browser"
+                icon="renovationSolution"
                 title="Renovation and Construction"
                 subtitle="Transform your office or bank space with our expert renovation and construction services. We bring innovation and precision to every project."
               />
             </ServiceBoxWrapper>
             
             <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Electrical Solutions" subtitle="From electrical supplies to wiring and overall electrical management, our services are designed to meet your electrical needs efficiently." />
+              <ServiceBox icon="electricSolution" title="Electrical Solutions" subtitle="From electrical supplies to wiring and overall electrical management, our services are designed to meet your electrical needs efficiently." />
             </ServiceBoxWrapper>
 
           </ServiceBoxRow>
@@ -156,102 +156,102 @@ const HeaderInfo = styled.div`
     text-align: center;
   }
 `;
-const Advertising = styled.div`
-  margin: 80px 0;
-  padding: 100px 0;
-  position: relative;
-  @media (max-width: 1160px) {
-    padding: 100px 0 40px 0;
-  }
-  @media (max-width: 860px) {
-    flex-direction: column;
-    padding: 0 0 30px 0;
-    margin: 80px 0 0px 0;
-  }
-`;
-const ButtonsRow = styled.div`
-  @media (max-width: 860px) {
-    justify-content: space-between;
-  }
-`;
-const AddLeft = styled.div`
-  width: 50%;
-  p {
-    max-width: 475px;
-  }
-  @media (max-width: 860px) {
-    width: 80%;
-    order: 2;
-    text-align: center;
-    h2 {
-      line-height: 3rem;
-      margin: 15px 0;
-    }
-    p {
-      margin: 0 auto;
-    }
-  }
-`;
-const AddRight = styled.div`
-  width: 50%;
-  position: absolute;
-  top: -70px;
-  right: 0;
-  @media (max-width: 860px) {
-    width: 80%;
-    position: relative;
-    order: 1;
-    top: -40px;
-  }
-`;
-const AddRightInner = styled.div`
-  width: 100%;
-`;
-const AddImgWrapp1 = styled.div`
-  width: 48%;
-  margin: 0 6% 10px 6%;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  }
-`;
-const AddImgWrapp2 = styled.div`
-  width: 30%;
-  margin: 0 5% 10px 5%;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  }
-`;
-const AddImgWrapp3 = styled.div`
-  width: 20%;
-  margin-left: 40%;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  }
-`;
-const AddImgWrapp4 = styled.div`
-  width: 30%;
-  margin: 0 5%auto;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  }
-`;
+// const Advertising = styled.div`
+//   margin: 80px 0;
+//   padding: 100px 0;
+//   position: relative;
+//   @media (max-width: 1160px) {
+//     padding: 100px 0 40px 0;
+//   }
+//   @media (max-width: 860px) {
+//     flex-direction: column;
+//     padding: 0 0 30px 0;
+//     margin: 80px 0 0px 0;
+//   }
+// `;
+// const ButtonsRow = styled.div`
+//   @media (max-width: 860px) {
+//     justify-content: space-between;
+//   }
+// `;
+// const AddLeft = styled.div`
+//   width: 50%;
+//   p {
+//     max-width: 475px;
+//   }
+//   @media (max-width: 860px) {
+//     width: 80%;
+//     order: 2;
+//     text-align: center;
+//     h2 {
+//       line-height: 3rem;
+//       margin: 15px 0;
+//     }
+//     p {
+//       margin: 0 auto;
+//     }
+//   }
+// `;
+// const AddRight = styled.div`
+//   width: 50%;
+//   position: absolute;
+//   top: -70px;
+//   right: 0;
+//   @media (max-width: 860px) {
+//     width: 80%;
+//     position: relative;
+//     order: 1;
+//     top: -40px;
+//   }
+// `;
+// const AddRightInner = styled.div`
+//   width: 100%;
+// `;
+// const AddImgWrapp1 = styled.div`
+//   width: 48%;
+//   margin: 0 6% 10px 6%;
+//   img {
+//     width: 100%;
+//     height: auto;
+//     border-radius: 1rem;
+//     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//   }
+// `;
+// const AddImgWrapp2 = styled.div`
+//   width: 30%;
+//   margin: 0 5% 10px 5%;
+//   img {
+//     width: 100%;
+//     height: auto;
+//     border-radius: 1rem;
+//     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//   }
+// `;
+// const AddImgWrapp3 = styled.div`
+//   width: 20%;
+//   margin-left: 40%;
+//   img {
+//     width: 100%;
+//     height: auto;
+//     border-radius: 1rem;
+//     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//   }
+// `;
+// const AddImgWrapp4 = styled.div`
+//   width: 30%;
+//   margin: 0 5%auto;
+//   img {
+//     width: 100%;
+//     height: auto;
+//     border-radius: 1rem;
+//     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+//   }
+// `;
