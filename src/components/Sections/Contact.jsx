@@ -4,6 +4,7 @@ import styled from "styled-components";
 import ContactImg1 from "../../assets/img/contact-1.png";
 import ContactImg2 from "../../assets/img/contact-2.png";
 import ContactImg3 from "../../assets/img/contact-3.png";
+import Whatsapp from "../../assets/img/WhatsApp_icon.png";
 
 export default function Contact() {
   return (
@@ -13,28 +14,53 @@ export default function Contact() {
           <HeaderInfo>
             <h1 className="font40 extraBold">Let's get in touch</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              We'd love to hear from you! Whether you have questions, feedback,
+              or just want to say hello, feel free to reach out using the below.
               <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              We'll get back to you as soon as possible.
             </p>
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <Form>
-                <label className="font13">First name:</label>
-                <input type="text" id="fname" name="fname" className="font20 extraBold" />
+                <label className="font13">Phone:</label>
+                <p className="font20 extraBold">03408392112</p>
+                <p className="font20 extraBold">03408392112</p>
                 <label className="font13">Email:</label>
-                <input type="text" id="email" name="email" className="font20 extraBold" />
-                <label className="font13">Subject:</label>
-                <input type="text" id="subject" name="subject" className="font20 extraBold" />
-                <textarea rows="4" cols="50" type="text" id="message" name="message" className="font20 extraBold" />
+                <p className="font20 extraBold">farzamyousuf1310@gmail.com</p>
               </Form>
-              <SumbitWrapper className="flex">
-                <ButtonInput type="submit" value="Send Message" className="pointer animate radius8" style={{ maxWidth: "220px" }} />
-              </SumbitWrapper>
+              <div
+                className="flex"
+                style={{
+                  border: "1px solid #25d366",
+                  backgroundColor: "#25d366",
+                  width: "30%",
+                  padding: "15px",
+                  outline: "none",
+                  color: "#fff",
+                  justifyContent:'space-around',
+                  alignItems:'center',
+                  borderRadius:'10px',
+                  height:'50px'
+                }}
+                onClick={()=>{
+                  window.location.href = 'https://wa.me/+923408392112?text=I want to enquire about your services';
+                }}
+              >
+                <img
+                  src={Whatsapp}
+                  alt="whatsapp"
+                  className=""
+                  style={{ height: 30, width: 30 }}
+                />
+               <h5 style={{height:'100%'}}>WhatsApp</h5>
+              </div>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
-              <div style={{ width: "50%" }} className="flexNullCenter flexColumn">
+              <div
+                style={{ width: "50%" }}
+                className="flexNullCenter flexColumn"
+              >
                 <ContactImgBox>
                   <img src={ContactImg1} alt="office" className="radius6" />
                 </ContactImgBox>
@@ -84,9 +110,25 @@ const Form = styled.form`
     padding: 30px 0;
   }
 `;
+// const SumbitWrapperStyle = styled.input`
+//   border: 1px solid #25d366;
+//   background-color: #25d366;
+//   width: 100%;
+//   padding: 15px;
+//   outline: none;
+//   color: #fff;
+//   :hover {
+//     background-color: #580cd2;
+//     border: 1px solid #256cab;
+//     color: #fff;
+//   }
+//   @media (max-width: 991px) {
+//     margin: 0 auto;
+//   }
+// `;
 const ButtonInput = styled.input`
-  border: 1px solid #256cab;
-  background-color: #256cab;
+  border: 1px solid #25d366;
+  background-color: #25d366;
   width: 100%;
   padding: 15px;
   outline: none;
@@ -101,8 +143,8 @@ const ButtonInput = styled.input`
   }
 `;
 const ContactImgBox = styled.div`
-  max-width: 180px; 
-  align-self: flex-end; 
+  max-width: 180px;
+  align-self: flex-end;
   margin: 10px 30px 10px 0;
 `;
 const SumbitWrapper = styled.div`
@@ -111,12 +153,3 @@ const SumbitWrapper = styled.div`
     margin-bottom: 50px;
   }
 `;
-
-
-
-
-
-
-
-
-

@@ -14,7 +14,7 @@ export default function Header() {
         <div>
           <h1 className="extraBold font40">Where Every Edge Connects, Innovation Begins.</h1>
           <HeaderP className="font13 semiBold">
-          At ConnectEdge Enterprises, our diverse array of services is tailored to meet the evolving needs of businesses in a rapidly advancing landscape. From cutting-edge hardware solutions encompassing laptops, desktops, data servers, indoor video walls, ticketing machines, CDM, Donatello, and VPS, to comprehensive software services spanning UI/UX Figma designs, web portfolios, websites, mobile applications, and robust backend microservices — we are your one-stop solution for all your technology needs.
+          At ConnectEdge Enterprises, our diverse array of services is tailored to meet the evolving needs of businesses in a rapidly advancing landscape. From cutting-edge hardware solutions encompassing laptops, desktops, data servers, indoor video walls, ticketing machines, and VPS, to comprehensive software services spanning UI/UX Figma designs, web portfolios, websites, mobile applications, and robust backend microservices — we are your one-stop solution for all your technology needs.
 
 Our expertise extends beyond the digital realm. We excel in SEO and digital marketing strategies, ensuring your brand gets the visibility it deserves. From network infrastructure and cabling to the meticulous installation of CCTV cameras, our commitment to seamless connectivity is unwavering.
 

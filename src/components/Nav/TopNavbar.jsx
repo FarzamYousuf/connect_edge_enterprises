@@ -21,20 +21,16 @@ export default function TopNavbar() {
 
   return (
     <>
-      <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+      {/* <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} /> */}
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
       <Wrapper
         className="flexCenter animate whiteBg"
-        style={y > 100 ? { height: "60px" } : { height: "80px" }}
+        style={y > 100 ? { height: "100px" } : { height: "100px" }}
       >
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
-            {/* <LogoIcon />
-            <h1 style={{ marginLeft: "15px" }} className="font20 extraBold">
-              fanatic
-            </h1> */}
             <LogoWrapper className="flexCenter">
-              <ImgStyle src={require('../../assets/img/logo.png')} alt="client logo" />
+              <ImgStyle src={require('../../assets/img/logo.png')} alt="client logo"  style={{height:'150px',width:'150px'}}/>
             </LogoWrapper>
           </Link>
           <BurderWrapper
@@ -68,7 +64,7 @@ export default function TopNavbar() {
                 Services
               </Link>
             </li>
-            <li className="semiBold font15 pointer">
+            {/* <li className="semiBold font15 pointer">
               <Link
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
@@ -91,8 +87,8 @@ export default function TopNavbar() {
               >
                 Blog
               </Link>
-            </li>
-            <li className="semiBold font15 pointer">
+            </li> */}
+            {/* <li className="semiBold font15 pointer">
               <Link
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
@@ -103,7 +99,7 @@ export default function TopNavbar() {
               >
                 Pricing
               </Link>
-            </li>
+            </li> */}
             <li className="semiBold font15 pointer">
               <Link
                 activeClass="active"
@@ -117,22 +113,6 @@ export default function TopNavbar() {
               </Link>
             </li>
           </UlWrapper>
-          {/* <UlWrapperRight className="flexNullCenter">
-            <li className="semiBold font15 pointer">
-              <a href="/" style={{ padding: "10px 30px 10px 0" }}>
-                Log in
-              </a>
-            </li>
-            <li className="semiBold font15 pointer flexCenter">
-              <a
-                href="/"
-                className="radius8 lightBg"
-                style={{ padding: "10px 15px" }}
-              >
-                Get Started
-              </a>
-            </li>
-          </UlWrapperRight> */}
         </NavInner>
       </Wrapper>
     </>
@@ -149,6 +129,7 @@ const Wrapper = styled.nav`
 const NavInner = styled.div`
   position: relative;
   height: 100%;
+  
 `;
 const BurderWrapper = styled.button`
   outline: none;

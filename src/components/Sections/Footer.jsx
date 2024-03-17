@@ -12,17 +12,16 @@ export default function Contact() {
 
   return (
     <Wrapper>
-      <div className="darkBg">
+      <div className="darkBg" style={{backgroundColor:'#256cab'}}>
         <div className="container">
           <InnerWrapper className="flexSpaceCenter" style={{ padding: "30px 0" }}>
-            <Link className="flexCenter animate pointer" to="home" smooth={true} offset={-80}>
-              <LogoImg />
-              <h1 className="font15 extraBold whiteColor" style={{ marginLeft: "15px" }}>
-                Fanatic
-              </h1>
-            </Link>
+            {/* <Link className="flexCenter animate pointer" to="home" smooth={true} offset={-80}>
+            <LogoWrapper className="flexCenter">
+              <ImgStyle src={require('../../assets/img/logo.png')} alt="client logo"  style={{height:'150px',width:'150px'}}/>
+            </LogoWrapper>
+            </Link> */}
             <StyleP className="whiteColor font13">
-              © {getCurrentYear()} - <span className="purpleColor font13">Fanatic</span> All Right Reserved
+              © 2024 - All Right Reserved
             </StyleP>
 
             <Link className="whiteColor animate pointer font13" to="home" smooth={true} offset={-80}>
@@ -47,4 +46,9 @@ const StyleP = styled.p`
   @media (max-width: 550px) {
     margin: 20px 0;
   }
+`;
+const ImgStyle = styled.img`
+  width: 100%;
+  height: 100%;
+  padding: 10%;
 `;
