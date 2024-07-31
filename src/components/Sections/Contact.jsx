@@ -24,10 +24,12 @@ export default function Contact() {
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <Form>
                 <label className="font13">Phone:</label>
-                <p className="font20 extraBold">03408392112</p>
-                <p className="font20 extraBold">03408392112</p>
+                <p className="font20 extraBold">+92 311 2808871</p>
+                <p className="font20 extraBold">+92 340 8392112</p>
                 <label className="font13">Email:</label>
-                <p className="font20 extraBold">farzamyousuf1310@gmail.com</p>
+                <p className="font20 extraBold">
+                  info@connectedgeenterprises.com
+                </p>
               </Form>
               <div
                 className="flex"
@@ -38,13 +40,14 @@ export default function Contact() {
                   padding: "15px",
                   outline: "none",
                   color: "#fff",
-                  justifyContent:'space-around',
-                  alignItems:'center',
-                  borderRadius:'10px',
-                  height:'50px'
+                  justifyContent: "space-around",
+                  alignItems: "center",
+                  borderRadius: "10px",
+                  height: "50px",
                 }}
-                onClick={()=>{
-                  window.location.href = 'https://wa.me/+923408392112?text=I want to enquire about your services';
+                onClick={() => {
+                  window.location.href =
+                    "https://wa.me/+923112808871?text=I want to enquire about your services";
                 }}
               >
                 <img
@@ -53,7 +56,7 @@ export default function Contact() {
                   className=""
                   style={{ height: 30, width: 30 }}
                 />
-               <h5 style={{height:'100%'}}>WhatsApp</h5>
+                <h5 style={{ height: "100%" }}>WhatsApp</h5>
               </div>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
